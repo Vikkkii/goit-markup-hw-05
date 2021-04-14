@@ -145,7 +145,7 @@ img {
 .main-nav-link {
   display: flex;
   align-items: center;
-  transition-property: color;
+  transition-property: fill, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -318,9 +318,6 @@ img {
 
   color: var(--bg-portfo);
   background-color: rgba(47, 48, 58, 0.8);
-
-  padding-top: 27px;
-  padding-bottom: 27px;
 }
 
 .team-card {
@@ -358,7 +355,8 @@ img {
   color: var(--bg-portfo);
   cursor: pointer;
   background-color: var(--accent-color);
-  transition-property: color, background-color;
+
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -497,8 +495,8 @@ img {
 }
 
 .link-team {
-  transition-property: color, background-color;
-  transition-duration: 250ms;
+  transition-property: fill, color, background-color;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -546,14 +544,14 @@ img {
   justify-content: center;
   align-items: center;
   width: 170px;
-
-  transition-property: color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icons .icon {
   fill: var(--color-icon);
+
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-card-icons:hover,
@@ -753,6 +751,10 @@ address {
   height: 100%;
   z-index: 150;
   background-color: rgba(0, 0, 0, 0.2);
+
+  transition-property: opacity;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdroup.is-hidden {
@@ -797,13 +799,12 @@ address {
   border-radius: 50%;
   line-height: 30px;
 
-  transition-property: color, background-color;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close:hover,
 .btn-close:focus {
-  fill: var(--bg-portfo);
-  background-color: var(--accent-color);
+  fill: var(--accent-color);
 }
