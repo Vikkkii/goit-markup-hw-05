@@ -140,12 +140,15 @@ img {
 .main-nav .icon {
   margin-right: 10px;
   fill: var(--main-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-nav-link {
   display: flex;
   align-items: center;
-  transition-property: fill, color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -478,6 +481,10 @@ img {
   height: 44px;
   border-radius: 50%;
   background: var(--bg-portfo);
+
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-margin + .card-margin {
@@ -487,17 +494,15 @@ img {
 .card-icons .icon {
   width: 20px;
   height: 20px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-team:hover .icon,
 .link-team:focus .icon {
   fill: var(--bg-portfo);
-}
-
-.link-team {
-  transition-property: fill, color, background-color;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-team:hover,
@@ -544,12 +549,16 @@ img {
   justify-content: center;
   align-items: center;
   width: 170px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icons .icon {
   fill: var(--color-icon);
 
-  transition-property: fill, border;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -752,7 +761,6 @@ address {
   z-index: 150;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition-property: opacity;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -799,7 +807,6 @@ address {
   border-radius: 50%;
   line-height: 30px;
 
-  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
